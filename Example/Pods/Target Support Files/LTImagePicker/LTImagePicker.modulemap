@@ -1,0 +1,6 @@
+framework module LTImagePicker {
+  umbrella header "LTImagePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

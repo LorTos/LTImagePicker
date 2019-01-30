@@ -1,0 +1,22 @@
+{
+  "name": "LTImagePicker",
+  "version": "0.1.0",
+  "summary": "A short description of LTImagePicker.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/LorTos/LTImagePicker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LorTos": "lorenzotoscanidc@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/LorTos/LTImagePicker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LTImagePicker/Classes/**/*"
+}
