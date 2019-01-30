@@ -19,6 +19,16 @@
 		FECC9D762201BD8200EF4754 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D752201BD8200EF4754 /* Notification+Extension.swift */; };
 		FECC9D7A2201BE1A00EF4754 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D792201BE1A00EF4754 /* CameraPreviewView.swift */; };
 		FECC9D7C2201BEAE00EF4754 /* CropGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D7B2201BEAE00EF4754 /* CropGridView.swift */; };
+		FECC9D802201E54E00EF4754 /* LTImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D7F2201E54E00EF4754 /* LTImagePickerCoordinator.swift */; };
+		FECC9D822201E5BF00EF4754 /* BottomCameraControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D812201E5BF00EF4754 /* BottomCameraControlsView.swift */; };
+		FECC9D842201E5D100EF4754 /* BottomCameraControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D832201E5D100EF4754 /* BottomCameraControlsView.xib */; };
+		FECC9D862201EBE200EF4754 /* EditingBottomControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D852201EBE200EF4754 /* EditingBottomControlsView.xib */; };
+		FECC9D882201EBF400EF4754 /* EditingBottomControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D872201EBF400EF4754 /* EditingBottomControlsView.swift */; };
+		FECC9D8A2201F12900EF4754 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D892201F12900EF4754 /* CameraManager.swift */; };
+		FECC9D8C2201F17900EF4754 /* TopCameraControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D8B2201F17900EF4754 /* TopCameraControlsView.xib */; };
+		FECC9D8E2201F18B00EF4754 /* TopCameraControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D8D2201F18B00EF4754 /* TopCameraControlsView.swift */; };
+		FECC9D902201F36A00EF4754 /* EditingTopControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D8F2201F36A00EF4754 /* EditingTopControlsView.xib */; };
+		FECC9D942201F39600EF4754 /* EditingTopControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D932201F39600EF4754 /* EditingTopControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +86,16 @@
 		FECC9D752201BD8200EF4754 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Extension.swift"; path = "LTImagePicker/Classes/Notification+Extension.swift"; sourceTree = "<group>"; };
 		FECC9D792201BE1A00EF4754 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraPreviewView.swift; path = LTImagePicker/Classes/CameraPreviewView.swift; sourceTree = "<group>"; };
 		FECC9D7B2201BEAE00EF4754 /* CropGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CropGridView.swift; path = LTImagePicker/Classes/CropGridView.swift; sourceTree = "<group>"; };
+		FECC9D7F2201E54E00EF4754 /* LTImagePickerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTImagePickerCoordinator.swift; path = LTImagePicker/Classes/LTImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		FECC9D812201E5BF00EF4754 /* BottomCameraControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BottomCameraControlsView.swift; path = LTImagePicker/Classes/BottomCameraControlsView.swift; sourceTree = "<group>"; };
+		FECC9D832201E5D100EF4754 /* BottomCameraControlsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BottomCameraControlsView.xib; path = LTImagePicker/Classes/BottomCameraControlsView.xib; sourceTree = "<group>"; };
+		FECC9D852201EBE200EF4754 /* EditingBottomControlsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EditingBottomControlsView.xib; path = LTImagePicker/Classes/EditingBottomControlsView.xib; sourceTree = "<group>"; };
+		FECC9D872201EBF400EF4754 /* EditingBottomControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditingBottomControlsView.swift; path = LTImagePicker/Classes/EditingBottomControlsView.swift; sourceTree = "<group>"; };
+		FECC9D892201F12900EF4754 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraManager.swift; path = LTImagePicker/Classes/CameraManager.swift; sourceTree = "<group>"; };
+		FECC9D8B2201F17900EF4754 /* TopCameraControlsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TopCameraControlsView.xib; path = LTImagePicker/Classes/TopCameraControlsView.xib; sourceTree = "<group>"; };
+		FECC9D8D2201F18B00EF4754 /* TopCameraControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopCameraControlsView.swift; path = LTImagePicker/Classes/TopCameraControlsView.swift; sourceTree = "<group>"; };
+		FECC9D8F2201F36A00EF4754 /* EditingTopControlsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EditingTopControlsView.xib; path = LTImagePicker/Classes/EditingTopControlsView.xib; sourceTree = "<group>"; };
+		FECC9D932201F39600EF4754 /* EditingTopControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditingTopControlsView.swift; path = LTImagePicker/Classes/EditingTopControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,9 +213,19 @@
 			children = (
 				53392AAAAB7C78C20E80CD32A9A2EB7B /* Pod */,
 				99EEA69931764E942FFFD7475E9D38F0 /* Support Files */,
+				FECC9D892201F12900EF4754 /* CameraManager.swift */,
 				FECC9D752201BD8200EF4754 /* Notification+Extension.swift */,
 				FECC9D792201BE1A00EF4754 /* CameraPreviewView.swift */,
 				FECC9D7B2201BEAE00EF4754 /* CropGridView.swift */,
+				FECC9D7F2201E54E00EF4754 /* LTImagePickerCoordinator.swift */,
+				FECC9D832201E5D100EF4754 /* BottomCameraControlsView.xib */,
+				FECC9D812201E5BF00EF4754 /* BottomCameraControlsView.swift */,
+				FECC9D8B2201F17900EF4754 /* TopCameraControlsView.xib */,
+				FECC9D8D2201F18B00EF4754 /* TopCameraControlsView.swift */,
+				FECC9D852201EBE200EF4754 /* EditingBottomControlsView.xib */,
+				FECC9D872201EBF400EF4754 /* EditingBottomControlsView.swift */,
+				FECC9D8F2201F36A00EF4754 /* EditingTopControlsView.xib */,
+				FECC9D932201F39600EF4754 /* EditingTopControlsView.swift */,
 			);
 			name = LTImagePicker;
 			path = ../..;
@@ -364,6 +394,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC9D862201EBE200EF4754 /* EditingBottomControlsView.xib in Resources */,
+				FECC9D902201F36A00EF4754 /* EditingTopControlsView.xib in Resources */,
+				FECC9D8C2201F17900EF4754 /* TopCameraControlsView.xib in Resources */,
+				FECC9D842201E5D100EF4754 /* BottomCameraControlsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,10 +423,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC9D802201E54E00EF4754 /* LTImagePickerCoordinator.swift in Sources */,
+				FECC9D882201EBF400EF4754 /* EditingBottomControlsView.swift in Sources */,
+				FECC9D8A2201F12900EF4754 /* CameraManager.swift in Sources */,
 				F4B8206A539F71E0BDB9A86107CA3BFB /* LTImagePicker-dummy.m in Sources */,
 				FECC9D762201BD8200EF4754 /* Notification+Extension.swift in Sources */,
 				FECC9D7C2201BEAE00EF4754 /* CropGridView.swift in Sources */,
+				FECC9D822201E5BF00EF4754 /* BottomCameraControlsView.swift in Sources */,
 				FECC9D7A2201BE1A00EF4754 /* CameraPreviewView.swift in Sources */,
+				FECC9D8E2201F18B00EF4754 /* TopCameraControlsView.swift in Sources */,
+				FECC9D942201F39600EF4754 /* EditingTopControlsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

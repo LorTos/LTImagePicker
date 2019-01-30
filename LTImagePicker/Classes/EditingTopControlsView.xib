@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditingTopControlsView" customModule="LTImagePicker" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="NJK-c8-jdV" id="sjU-zB-Ut6"/>
+                <outlet property="cancelButton" destination="ciD-vy-dyy" id="S2v-rj-HP1"/>
+                <outlet property="doneButton" destination="sWI-uW-qRd" id="iE7-ZN-19o"/>
+                <outlet property="editButton" destination="VRd-WR-BsN" id="dOh-b4-QT4"/>
+                <outlet property="editingStackView" destination="zVS-Ef-dbj" id="z3V-x0-ij1"/>
+                <outlet property="navigationStackView" destination="T1E-JJ-kcK" id="ePP-Ic-djN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mUH-Jo-lCM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SyK-KK-8go">
+                    <rect key="frame" x="20" y="0.0" width="335" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="T1E-JJ-kcK">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJK-c8-jdV">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="B9W-sB-P1J"/>
+                                        <constraint firstAttribute="height" constant="50" id="Msv-Bw-eTz"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="tappedBack:" destination="-1" eventType="touchUpInside" id="xl9-Qe-cl1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRd-WR-BsN">
+                                    <rect key="frame" x="285" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="VLv-Nm-tC3"/>
+                                        <constraint firstAttribute="width" constant="50" id="tuM-EO-6J4"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="tappedOnEdit:" destination="-1" eventType="touchUpInside" id="Kda-l5-JJ6"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-Ef-dbj">
+                            <rect key="frame" x="0.0" y="50" width="335" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciD-vy-dyy">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="a7K-02-qoy"/>
+                                        <constraint firstAttribute="width" constant="50" id="g65-r6-Lbt"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="tappedOnCancel:" destination="-1" eventType="touchUpInside" id="lJF-zB-hSM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWI-uW-qRd">
+                                    <rect key="frame" x="285" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="3q0-n9-Pa1"/>
+                                        <constraint firstAttribute="height" constant="50" id="gW0-x2-ehs"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="tappedOnDone:" destination="-1" eventType="touchUpInside" id="tgd-El-22Q"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SyK-KK-8go" secondAttribute="bottom" id="6ac-bw-ujQ"/>
+                <constraint firstItem="SyK-KK-8go" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TwT-lf-i2M"/>
+                <constraint firstItem="SyK-KK-8go" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="V4C-2i-tH4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SyK-KK-8go" secondAttribute="trailing" constant="20" id="hsj-Cd-itD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="399.40029985007499"/>
+        </view>
+    </objects>
+</document>
