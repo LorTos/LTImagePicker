@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LTImagePicker_Example' do
+  pod 'LTImagePicker', :path => '../'
+
+  target 'LTImagePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
