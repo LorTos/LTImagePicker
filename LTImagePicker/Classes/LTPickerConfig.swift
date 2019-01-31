@@ -11,10 +11,16 @@ public struct LTPickerConfig {
     var navigationBackgroundColor: UIColor
     var navigationTintColor: UIColor
     var accentColor: UIColor
+    var shouldShowTextInput: Bool = false
     
-    public init(navBackgroundColor: UIColor, navTintColor: UIColor, accentColor: UIColor) {
+    public init(navBackgroundColor: UIColor,
+                navTintColor: UIColor,
+                accentColor: UIColor,
+                shouldShowTextInput: Bool = false)
+    {
         navigationBackgroundColor = navBackgroundColor
         navigationTintColor = navTintColor
         self.accentColor = accentColor
+        self.shouldShowTextInput = shouldShowTextInput
     }
 }

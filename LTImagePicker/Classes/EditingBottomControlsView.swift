@@ -61,10 +61,7 @@ class EditingBottomControlsView: UIView {
             $0?.setTitle("", for: .normal)
         })
         
-        // MARK: - Remove to enable text input
-        inputTextField.alpha = 0
-        inputTextField.isUserInteractionEnabled = false
-        // -
+        enableTextField(false, shouldHide: true)
     }
     
     override func layoutSubviews() {
@@ -72,6 +69,12 @@ class EditingBottomControlsView: UIView {
         [confirmButton, aspectRatioButton, rotateButton].forEach({
             $0?.layer.cornerRadius = $0!.bounds.width / 2
         })
+    }
+    
+    func enableTextField(_ isEnabled: Bool, shouldHide: Bool) {
+        inputTextField.isUserInteractionEnabled = isEnabled
+        inputTextField.alpha = shouldHide ? 0 : 1
+        // TODO: - change icon according to isEnabled
     }
     
     @IBAction func tappedOnConfirm(_ sender: UIButton) {

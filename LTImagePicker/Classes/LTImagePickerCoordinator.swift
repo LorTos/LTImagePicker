@@ -34,13 +34,13 @@ public class LTImagePickerCoordinator: NSObject, UIImagePickerControllerDelegate
     }
     
     func goToEditingController(with image: UIImage) {
-        let editController = EditingViewController(image: image)
+        let editController = EditingViewController(image: image, config: configuration)
         navigationController?.pushViewController(editController, animated: true)
     }
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.originalImage] as? UIImage else { return }
-        let editController = EditingViewController(image: image)
+        let editController = EditingViewController(image: image, config: configuration)
         picker.pushViewController(editController, animated: true)
     }
     

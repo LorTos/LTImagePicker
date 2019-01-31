@@ -18,10 +18,12 @@ class EditingViewController: UIViewController {
     private var selectedImage: UIImage
     private var cropOverlay = CropGridView()
     private var overlayMaskLayer: CAShapeLayer?
+    private var config: LTPickerConfig?
     
     //MARK: - Init and Lifecycle
-    init(image: UIImage) {
+    init(image: UIImage, config: LTPickerConfig?) {
         selectedImage = image
+        self.config = config
         super.init(nibName: "EditingViewController", bundle: Bundle(for: EditingViewController.self))
         
     }
@@ -40,6 +42,11 @@ class EditingViewController: UIViewController {
         cropOverlay.delegate = self
         bottomControlsView.inputTextField.delegate = self
         previewImageView.image = selectedImage
+        
+        if let config = config {
+            let showTextField = config.shouldShowTextInput
+            bottomControlsView.enableTextField(showTextField, shouldHide: !showTextField)
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -229,7 +236,8 @@ extension EditingViewController: EditingTopControlsDelegate, EditingBottomContro
     func didConfirmPhotoSelection() {
         view.endEditing(true)
         NotificationCenter.default.post(name: .didFinishPickingImage, object: nil, userInfo: [
-            "image": self.selectedImage
+            "image": self.selectedImage,
+            "message": self.bottomControlsView.inputTextField.text
             ])
         dismiss(animated: true, completion: nil)
     }
