@@ -235,9 +235,10 @@ extension EditingViewController: EditingTopControlsDelegate, EditingBottomContro
     
     func didConfirmPhotoSelection() {
         view.endEditing(true)
+        let message = bottomControlsView.inputTextField.text ?? ""
         NotificationCenter.default.post(name: .didFinishPickingImage, object: nil, userInfo: [
-            "image": self.selectedImage,
-            "message": self.bottomControlsView.inputTextField.text
+            "image": selectedImage,
+            "message": message
             ])
         dismiss(animated: true, completion: nil)
     }
