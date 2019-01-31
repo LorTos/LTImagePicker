@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditingViewController" customModule="LTImagePicker" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomControlsView" destination="7Tf-yM-4b9" id="c8T-Xc-jdo"/>
+                <outlet property="previewImageView" destination="ERE-wn-Um3" id="M97-Ka-VAL"/>
+                <outlet property="topControlsView" destination="MaK-Xh-P12" id="W4t-gj-xfp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERE-wn-Um3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-Xh-P12" customClass="EditingTopControlsView" customModule="LTImagePicker" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-yM-4b9" customClass="EditingBottomControlsView" customModule="LTImagePicker" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Tf-yM-4b9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-70" id="4rn-K4-Obo"/>
+                <constraint firstItem="7Tf-yM-4b9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6u1-jw-E3d"/>
+                <constraint firstAttribute="bottom" secondItem="7Tf-yM-4b9" secondAttribute="bottom" id="8CP-A8-Nhu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="MaK-Xh-P12" secondAttribute="bottom" constant="-60" id="Cdk-EV-ahg"/>
+                <constraint firstItem="MaK-Xh-P12" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EIx-ep-C6g"/>
+                <constraint firstItem="ERE-wn-Um3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LIi-yA-uJ1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MaK-Xh-P12" secondAttribute="trailing" id="PCQ-31-N9u"/>
+                <constraint firstAttribute="bottom" secondItem="ERE-wn-Um3" secondAttribute="bottom" id="fXJ-9Z-fWs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Tf-yM-4b9" secondAttribute="trailing" id="ivd-yU-hYT"/>
+                <constraint firstItem="ERE-wn-Um3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k3H-vy-H4n"/>
+                <constraint firstAttribute="trailing" secondItem="ERE-wn-Um3" secondAttribute="trailing" id="mae-qD-QgC"/>
+                <constraint firstItem="MaK-Xh-P12" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uJD-vT-MIR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

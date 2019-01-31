@@ -7,15 +7,21 @@
 
 import Foundation
 
-public class CameraCropCoordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+public class LTImagePickerCoordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     private weak var navigationController: UINavigationController?
+    private var configuration: LTPickerConfig?
+    
+    public init(configuration: LTPickerConfig? = nil) {
+        self.configuration = configuration
+        super.init()
+    }
     
     public func startCameraFlow(from viewController: UIViewController) {
-//        let cameraController = CameraInputController(self)
-//        let cameraNavController = UINavigationController(rootViewController: cameraController)
-//        navigationController = cameraNavController
-//        viewController.present(cameraNavController, animated: true, completion: nil)
+        let cameraController = CameraInputViewController(coordinator: self, configuration: configuration)
+        let cameraNavController = UINavigationController(rootViewController: cameraController)
+        navigationController = cameraNavController
+        viewController.present(cameraNavController, animated: true, completion: nil)
     }
     
     public func startLibraryPickerFlow(from viewController: UIViewController) {
@@ -23,18 +29,28 @@ public class CameraCropCoordinator: NSObject, UIImagePickerControllerDelegate, U
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
+        decorateNavigationBar(imagePicker.navigationBar, with: configuration)
         viewController.present(imagePicker, animated: true, completion: nil)
     }
     
     func goToEditingController(with image: UIImage) {
-//        let editController = ImageEditingViewController(image: image)
-//        navigationController?.pushViewController(editController, animated: true)
+        let editController = EditingViewController(image: image)
+        navigationController?.pushViewController(editController, animated: true)
     }
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//        guard let image = info[.originalImage] as? UIImage else { return }
-//        goToEditingController(with: image)
-//        let editController = ImageEditingViewController(image: image)
-//        picker.pushViewController(editController, animated: true)
+        guard let image = info[.originalImage] as? UIImage else { return }
+        let editController = EditingViewController(image: image)
+        picker.pushViewController(editController, animated: true)
+    }
+    
+    
+    private func decorateNavigationBar(_ navbar: UINavigationBar, with config: LTPickerConfig?) {
+        guard let config = config else { return }
+        navbar.barTintColor = config.navigationBackgroundColor
+        navbar.tintColor = config.navigationTintColor
+        navbar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: config.navigationTintColor
+        ]
     }
 }

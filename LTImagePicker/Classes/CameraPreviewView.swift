@@ -14,6 +14,8 @@ protocol CameraPreviewViewDelegate: class {
 
 class CameraPreviewView: UIView {
     private var tapGesture: UITapGestureRecognizer?
+    private var focusColor = UIColor(red: 1, green: 224/255, blue: 30/255, alpha: 1)
+
     weak var delegate: CameraPreviewViewDelegate?
     
     var session: AVCaptureSession? {
@@ -37,6 +39,10 @@ class CameraPreviewView: UIView {
         tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedInView(_:)))
         addGestureRecognizer(tapGesture!)
     }
+    override class var layerClass: AnyClass {
+        return AVCaptureVideoPreviewLayer.self
+    }
+    
     
     @objc private func tappedInView(_ sender: UITapGestureRecognizer) {
         let tapLocation = sender.location(in: self)
@@ -49,7 +55,7 @@ class CameraPreviewView: UIView {
         focusView.layer.cornerRadius = 2
         focusView.layer.masksToBounds = true
         focusView.layer.borderWidth = 2
-        focusView.layer.borderColor = UIColor(red: 1, green: 224/255, blue: 30/255, alpha: 1).cgColor
+        focusView.layer.borderColor = focusColor.cgColor
         focusView.backgroundColor = .clear
         
         addSubview(focusView)
@@ -62,7 +68,7 @@ class CameraPreviewView: UIView {
         }
     }
     
-    override class var layerClass: AnyClass {
-        return AVCaptureVideoPreviewLayer.self
+    public func setFocusColor(to color: UIColor) {
+        focusColor = color
     }
 }

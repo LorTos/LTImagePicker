@@ -16,6 +16,7 @@
 		F238DF2D3F1D749CF3F819620C6992FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		F4B8206A539F71E0BDB9A86107CA3BFB /* LTImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EF67A4134F77AFFCA71F9C58A406B6 /* LTImagePicker-dummy.m */; };
 		F4F1146429C2A8C2D823719A53BA8392 /* Pods-LTImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCE0680FCB40D6AFC124CB38339E3E /* Pods-LTImagePicker_Example-dummy.m */; };
+		FE71AEF02202F679002CA75B /* LTPickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71AEEF2202F679002CA75B /* LTPickerConfig.swift */; };
 		FECC9D762201BD8200EF4754 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D752201BD8200EF4754 /* Notification+Extension.swift */; };
 		FECC9D7A2201BE1A00EF4754 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D792201BE1A00EF4754 /* CameraPreviewView.swift */; };
 		FECC9D7C2201BEAE00EF4754 /* CropGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D7B2201BEAE00EF4754 /* CropGridView.swift */; };
@@ -29,6 +30,10 @@
 		FECC9D8E2201F18B00EF4754 /* TopCameraControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D8D2201F18B00EF4754 /* TopCameraControlsView.swift */; };
 		FECC9D902201F36A00EF4754 /* EditingTopControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D8F2201F36A00EF4754 /* EditingTopControlsView.xib */; };
 		FECC9D942201F39600EF4754 /* EditingTopControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D932201F39600EF4754 /* EditingTopControlsView.swift */; };
+		FECC9D972201F75200EF4754 /* CameraInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D952201F75200EF4754 /* CameraInputViewController.swift */; };
+		FECC9D982201F75200EF4754 /* CameraInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D962201F75200EF4754 /* CameraInputViewController.xib */; };
+		FECC9D9F2201FCB300EF4754 /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC9D9D2201FCB300EF4754 /* EditingViewController.swift */; };
+		FECC9DA02201FCB300EF4754 /* EditingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC9D9E2201FCB300EF4754 /* EditingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,7 @@
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DB73C979BA96642E46415A050011A211 /* Pods-LTImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DBB5BFD1A30DAC14D4CBB6CB78CC0354 /* Pods-LTImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FE71AEEF2202F679002CA75B /* LTPickerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LTPickerConfig.swift; path = LTImagePicker/Classes/LTPickerConfig.swift; sourceTree = "<group>"; };
 		FECC9D752201BD8200EF4754 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Extension.swift"; path = "LTImagePicker/Classes/Notification+Extension.swift"; sourceTree = "<group>"; };
 		FECC9D792201BE1A00EF4754 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraPreviewView.swift; path = LTImagePicker/Classes/CameraPreviewView.swift; sourceTree = "<group>"; };
 		FECC9D7B2201BEAE00EF4754 /* CropGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CropGridView.swift; path = LTImagePicker/Classes/CropGridView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,10 @@
 		FECC9D8D2201F18B00EF4754 /* TopCameraControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopCameraControlsView.swift; path = LTImagePicker/Classes/TopCameraControlsView.swift; sourceTree = "<group>"; };
 		FECC9D8F2201F36A00EF4754 /* EditingTopControlsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EditingTopControlsView.xib; path = LTImagePicker/Classes/EditingTopControlsView.xib; sourceTree = "<group>"; };
 		FECC9D932201F39600EF4754 /* EditingTopControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditingTopControlsView.swift; path = LTImagePicker/Classes/EditingTopControlsView.swift; sourceTree = "<group>"; };
+		FECC9D952201F75200EF4754 /* CameraInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraInputViewController.swift; path = LTImagePicker/Classes/CameraInputViewController.swift; sourceTree = "<group>"; };
+		FECC9D962201F75200EF4754 /* CameraInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CameraInputViewController.xib; path = LTImagePicker/Classes/CameraInputViewController.xib; sourceTree = "<group>"; };
+		FECC9D9D2201FCB300EF4754 /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditingViewController.swift; path = LTImagePicker/Classes/EditingViewController.swift; sourceTree = "<group>"; };
+		FECC9D9E2201FCB300EF4754 /* EditingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EditingViewController.xib; path = LTImagePicker/Classes/EditingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +236,11 @@
 				FECC9D872201EBF400EF4754 /* EditingBottomControlsView.swift */,
 				FECC9D8F2201F36A00EF4754 /* EditingTopControlsView.xib */,
 				FECC9D932201F39600EF4754 /* EditingTopControlsView.swift */,
+				FECC9D962201F75200EF4754 /* CameraInputViewController.xib */,
+				FECC9D952201F75200EF4754 /* CameraInputViewController.swift */,
+				FECC9D9E2201FCB300EF4754 /* EditingViewController.xib */,
+				FECC9D9D2201FCB300EF4754 /* EditingViewController.swift */,
+				FE71AEEF2202F679002CA75B /* LTPickerConfig.swift */,
 			);
 			name = LTImagePicker;
 			path = ../..;
@@ -395,9 +410,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECC9D862201EBE200EF4754 /* EditingBottomControlsView.xib in Resources */,
+				FECC9D982201F75200EF4754 /* CameraInputViewController.xib in Resources */,
 				FECC9D902201F36A00EF4754 /* EditingTopControlsView.xib in Resources */,
 				FECC9D8C2201F17900EF4754 /* TopCameraControlsView.xib in Resources */,
 				FECC9D842201E5D100EF4754 /* BottomCameraControlsView.xib in Resources */,
+				FECC9DA02201FCB300EF4754 /* EditingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECC9D802201E54E00EF4754 /* LTImagePickerCoordinator.swift in Sources */,
+				FECC9D9F2201FCB300EF4754 /* EditingViewController.swift in Sources */,
 				FECC9D882201EBF400EF4754 /* EditingBottomControlsView.swift in Sources */,
 				FECC9D8A2201F12900EF4754 /* CameraManager.swift in Sources */,
 				F4B8206A539F71E0BDB9A86107CA3BFB /* LTImagePicker-dummy.m in Sources */,
@@ -432,6 +450,8 @@
 				FECC9D822201E5BF00EF4754 /* BottomCameraControlsView.swift in Sources */,
 				FECC9D7A2201BE1A00EF4754 /* CameraPreviewView.swift in Sources */,
 				FECC9D8E2201F18B00EF4754 /* TopCameraControlsView.swift in Sources */,
+				FECC9D972201F75200EF4754 /* CameraInputViewController.swift in Sources */,
+				FE71AEF02202F679002CA75B /* LTPickerConfig.swift in Sources */,
 				FECC9D942201F39600EF4754 /* EditingTopControlsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
