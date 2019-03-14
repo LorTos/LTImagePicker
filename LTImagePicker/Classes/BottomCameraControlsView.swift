@@ -44,7 +44,7 @@ class BottomCameraControlsView: UIView {
         recordView.layer.borderColor = UIColor.white.cgColor
         recordView.layer.masksToBounds = true
         
-        switchCameraButton.setImage(UIImage(named: "switch"), for: .normal)
+        switchCameraButton.setImage(UIImage(named: "switch", in: Bundle(for: BottomCameraControlsView.self), compatibleWith: nil), for: .normal)
         switchCameraButton.tintColor = UIColor.white
         switchCameraButton.setTitle("", for: .normal)
     }

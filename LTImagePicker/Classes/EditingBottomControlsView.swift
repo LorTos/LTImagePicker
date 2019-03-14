@@ -55,11 +55,13 @@ class EditingBottomControlsView: UIView {
         [aspectRatioButton, resetButton, confirmButton, rotateButton].forEach({
             $0?.tintColor = UIColor.white
         })
-        aspectRatioButton.setImage(UIImage(named: "aspect"), for: .normal)
-        rotateButton.setImage(UIImage(named: "switch"), for: .normal)
+        confirmButton.setImage(UIImage(named: "send", in: Bundle(for: EditingBottomControlsView.self), compatibleWith: nil), for: .normal)
+        aspectRatioButton.setImage(UIImage(named: "aspect", in: Bundle(for: EditingBottomControlsView.self), compatibleWith: nil), for: .normal)
+        rotateButton.setImage(UIImage(named: "rotate", in: Bundle(for: EditingBottomControlsView.self), compatibleWith: nil), for: .normal)
         [aspectRatioButton, rotateButton, confirmButton].forEach({
             $0?.setTitle("", for: .normal)
         })
+        resetButton.setTitle("Reset", for: .normal)
         
         enableTextField(false, shouldHide: true)
     }

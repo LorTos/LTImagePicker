@@ -43,10 +43,16 @@ class EditingTopControlsView: UIView {
         [backButton, editButton, cancelButton].forEach({
             $0?.backgroundColor = UIColor.black.withAlphaComponent(0.4)
             $0?.layer.masksToBounds = true
+            $0?.setTitle("", for: .normal)
         })
         doneButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        doneButton.setTitle("", for: .normal)
         [backButton, editButton, cancelButton, doneButton].forEach({ $0?.tintColor = .white })
         editingStackView.isHidden = true
+        editButton.setImage(UIImage(named: "crop", in: Bundle(for: EditingTopControlsView.self), compatibleWith: nil), for: .normal)
+        doneButton.setImage(UIImage(named: "check", in: Bundle(for: EditingTopControlsView.self), compatibleWith: nil), for: .normal)
+        cancelButton.setImage(UIImage(named: "cancel", in: Bundle(for: EditingTopControlsView.self), compatibleWith: nil), for: .normal)
+        backButton.setImage(UIImage(named: "back", in: Bundle(for: EditingTopControlsView.self), compatibleWith: nil), for: .normal)
     }
     override func layoutSubviews() {
         super.layoutSubviews()

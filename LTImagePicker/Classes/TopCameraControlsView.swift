@@ -44,21 +44,23 @@ class TopCameraControlsView: UIView {
             $0?.tintColor = .white
             $0?.setTitle("", for: .normal)
         })
+        closeButton.setImage(UIImage(named: "cancel", in: Bundle(for: TopCameraControlsView.self), compatibleWith: nil), for: .normal)
+        flashButton.setImage(UIImage(named: "flash_off", in: Bundle(for: TopCameraControlsView.self), compatibleWith: nil), for: .normal)
     }
     
     func switchFlashIcon() {
         switch currentFlashMode {
         case .on:
             currentFlashMode = .auto
-            flashButton.setImage(UIImage(named: "flashAuto"), for: .normal)
+            flashButton.setImage(UIImage(named: "flash_auto", in: Bundle(for: TopCameraControlsView.self), compatibleWith: nil), for: .normal)
             flashButton.tintColor = UIColor(red: 1, green: 224/255, blue: 30/255, alpha: 1)
         case .off:
             currentFlashMode = .on
-            flashButton.setImage(UIImage(named: "flashOn"), for: .normal)
+            flashButton.setImage(UIImage(named: "flash_on", in: Bundle(for: TopCameraControlsView.self), compatibleWith: nil), for: .normal)
             flashButton.tintColor = UIColor(red: 1, green: 224/255, blue: 30/255, alpha: 1)
         case .auto:
             currentFlashMode = .off
-            flashButton.setImage(UIImage(named: "flashOff"), for: .normal)
+            flashButton.setImage(UIImage(named: "flash_off", in: Bundle(for: TopCameraControlsView.self), compatibleWith: nil), for: .normal)
             flashButton.tintColor = .white
         }
     }
