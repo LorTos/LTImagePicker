@@ -19,10 +19,11 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(selectedImage(_:)), name: .didFinishPickingImage, object: nil)
         
         // Picker configuration
-        let config = LTPickerConfig(navBackgroundColor: UIColor.black,
+        let config = LTPickerConfig(navBackgroundColor: UIColor.gray,
                                     navTintColor: UIColor.white,
+                                    // accentColor: color of the ring around the camera button
                                     accentColor: UIColor(red: 249/255, green: 215/255, blue: 68/255, alpha: 1),
-                                    shouldShowTextInput: false)
+                                    shouldShowTextInput: true)
         coordinator = LTImagePickerCoordinator(configuration: config)
     }
     
