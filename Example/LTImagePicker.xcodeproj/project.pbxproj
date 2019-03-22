@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B13BD3F74C4C1187A62E573D /* Pods_LTImagePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTImagePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B98B0649CBF2D1F2DD5CB4D6 /* LTImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LTImagePicker.podspec; path = ../LTImagePicker.podspec; sourceTree = "<group>"; };
+		B98B0649CBF2D1F2DD5CB4D6 /* LTImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LTImagePicker.podspec; path = ../LTImagePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C71F90B3394440DB7A3CBBB3 /* Pods_LTImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6986D7378DEE56C3B59994 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */

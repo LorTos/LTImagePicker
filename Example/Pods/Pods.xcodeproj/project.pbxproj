@@ -34,7 +34,7 @@
 		F238DF2D3F1D749CF3F819620C6992FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		F4F1146429C2A8C2D823719A53BA8392 /* Pods-LTImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCE0680FCB40D6AFC124CB38339E3E /* Pods-LTImagePicker_Example-dummy.m */; };
 		F6F5B1DE9C0FF4190CB77CEF26D94C2F /* LTImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 104791E55D0B51245B20402FED1BA26B /* LTImagePicker-dummy.m */; };
-		FE0FE2BD222C7CF50039A840 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0FE2BC222C7CF50039A840 /* Media.xcassets */; };
+		FE6DBC52223EF4F200D8B8ED /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6DBC51223EF4F200D8B8ED /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 		E598975BFCB89BBEFEC4CE22034FD9C9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E7C31A6DFACED2D75A3749CD9E3233B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F42B9D555E8BEA9DB0FF096427FE0D30 /* EditingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EditingViewController.xib; path = LTImagePicker/Classes/EditingViewController.xib; sourceTree = "<group>"; };
-		FE0FE2BC222C7CF50039A840 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = LTImagePicker/Assets/Media.xcassets; sourceTree = "<group>"; };
+		FE6DBC51223EF4F200D8B8ED /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = LTImagePicker/Assets/Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +208,7 @@
 		70C07942AE125921DB60AA64BEC522F5 /* LTImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				FE6DBC51223EF4F200D8B8ED /* Media.xcassets */,
 				07D9ED283CEB1961950A334D45FF43C2 /* BottomCameraControlsView.swift */,
 				3BAE3D7B16A69857BA22C9CC9D5A52EF /* BottomCameraControlsView.xib */,
 				8B18BD46B746ADD0FA46969507BE590E /* CameraInputViewController.swift */,
@@ -228,7 +229,6 @@
 				E20C962E6538EFA46C8F18E24F5870A5 /* TopCameraControlsView.xib */,
 				AFEE6DEDFC53CB1AC53E3C25C6A596B0 /* Pod */,
 				14A5C81445FDD251A3FD6F8A2FCFDB7A /* Support Files */,
-				FE0FE2BC222C7CF50039A840 /* Media.xcassets */,
 			);
 			name = LTImagePicker;
 			path = ../..;
@@ -407,7 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0FE2BD222C7CF50039A840 /* Media.xcassets in Resources */,
+				FE6DBC52223EF4F200D8B8ED /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
